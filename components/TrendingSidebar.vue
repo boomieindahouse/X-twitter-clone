@@ -1,7 +1,7 @@
 <template>
   <aside class="w-[350px] fixed right-0 h-screen p-4 overflow-y-auto">
     <div class="sticky top-4">
-      <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-4 mb-4">
+      <div class="bg-gray-50 dark:bg-black border-[1px] dark:border-gray-500 rounded-2xl p-4 mb-4">
         <h2 class="text-xl font-bold mb-4 text-white">What's happening</h2>
         
         <div class="space-y-6">
@@ -19,7 +19,7 @@
         </button>
       </div>
       
-      <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-4">
+      <div class="bg-gray-50 dark:bg-black border-[1px] dark:border-gray-500 rounded-2xl p-4">
         <h2 class="text-xl font-bold mb-4 text-white">Who to follow</h2>
         
         <div class="space-y-4">
