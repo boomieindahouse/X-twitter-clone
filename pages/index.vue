@@ -92,6 +92,20 @@ const posts = ref([
   {
     id: 2,
     author: {
+      name: 'NO CONTEXT HUMANS',
+      handle: '@HumansNoContext',
+      avatar: 'https://placehold.co/48'
+    },
+    content: 'This is what happens when you block the road...',
+    likes: '5.4K',
+    reposts: '299',
+    replies: '318',
+    views: '465K',
+    createdAt: '2024-04-03T12:00:00Z'
+  },
+  {
+    id: 3,
+    author: {
       name: 'Red Skull',
       handle: '@RedSkullxxx',
       avatar: 'https://placehold.co/48'

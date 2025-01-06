@@ -2,13 +2,13 @@
   <aside class="w-[350px] fixed right-0 h-screen p-4 overflow-y-auto">
     <div class="sticky top-4">
       <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-4 mb-4">
-        <h2 class="text-xl font-bold mb-4">What's happening</h2>
+        <h2 class="text-xl font-bold mb-4 text-white">What's happening</h2>
         
         <div class="space-y-6">
           <ClientOnly>
             <div v-for="trend in trends" :key="trend.id" class="cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800 -mx-2 p-2 rounded">
               <div class="text-sm text-gray-500">{{ trend.category }}</div>
-              <div class="font-bold">{{ trend.title }}</div>
+              <div class="font-bold text-white">{{ trend.title }}</div>
               <div class="text-sm text-gray-500">{{ trend.posts }} posts</div>
             </div>
           </ClientOnly>
@@ -20,7 +20,7 @@
       </div>
       
       <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-4">
-        <h2 class="text-xl font-bold mb-4">Who to follow</h2>
+        <h2 class="text-xl font-bold mb-4 text-white">Who to follow</h2>
         
         <div class="space-y-4">
           <ClientOnly>
@@ -28,7 +28,7 @@
               <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700"></div>
                 <div>
-                  <div class="font-bold">{{ user.name }}</div>
+                  <div class="font-bold text-white">{{ user.name }}</div>
                   <div class="text-gray-500">{{ user.handle }}</div>
                 </div>
               </div>
