@@ -6,40 +6,35 @@
       </NuxtLink>
       
       <nav class="flex-1 mt-2">
-        <NuxtLink to="/" class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full">
+        <NuxtLink to="/" class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full" :class="{ 'font-bold': route.path === '/' }">
           <HomeIcon class="w-7 h-7 text-white" />
           <span class="text-xl text-white">Home</span>
         </NuxtLink>
         
-        <button class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full">
+        <NuxtLink to="/explore" class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full" :class="{ 'font-bold': route.path === '/explore' }">
           <MagnifyingGlassIcon class="w-7 h-7 text-white" />
           <span class="text-xl text-white">Explore</span>
-        </button>
+        </NuxtLink>
         
-        <button class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full">
+        <NuxtLink to="/notifications" class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full" :class="{ 'font-bold': route.path === '/notifications' }">
           <BellIcon class="w-7 h-7 text-white" />
           <span class="text-xl text-white">Notifications</span>
-        </button>
+        </NuxtLink>
         
-        <button class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full">
+        <NuxtLink to="/messages" class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full" :class="{ 'font-bold': route.path === '/messages' }">
           <EnvelopeIcon class="w-7 h-7 text-white" />
           <span class="text-xl text-white">Messages</span>
-        </button>
+        </NuxtLink>
         
-        <button class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full lg:hidden xl:flex">
+        <NuxtLink to="/bookmarks" class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full lg:hidden xl:flex" :class="{ 'font-bold': route.path === '/bookmarks' }">
           <BookmarkIcon class="w-7 h-7 text-white" />
           <span class="text-xl text-white">Bookmarks</span>
-        </button>
+        </NuxtLink>
         
-        <button class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full lg:hidden xl:flex">
-          <UserGroupIcon class="w-7 h-7 text-white" />
-          <span class="text-xl text-white">Communities</span>
-        </button>
-        
-        <button class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full">
+        <NuxtLink to="/profile" class="flex items-center space-x-4 p-3 hover:bg-gray-50 dark:hover:bg-gray-900 rounded-full w-full" :class="{ 'font-bold': route.path === '/profile' }">
           <UserIcon class="w-7 h-7 text-white" />
           <span class="text-xl text-white">Profile</span>
-        </button>
+        </NuxtLink>
       </nav>
       
       <button class="btn-primary w-full mt-4">
@@ -56,7 +51,8 @@ import {
   BellIcon,
   EnvelopeIcon,
   BookmarkIcon,
-  UserGroupIcon,
   UserIcon
 } from '@heroicons/vue/24/outline'
+
+const route = useRoute()
 </script>
